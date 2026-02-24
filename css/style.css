@@ -134,12 +134,27 @@ p {
 
 .spotlight .svg-path {
   position: absolute;
-  top: 25svh;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  width: 330%;
   height: 100%;
   z-index: -1;
+}
+@media screen and (min-width: 575px) {
+  .spotlight .svg-path {
+    width: 275%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .spotlight .svg-path {
+    width: 125%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .spotlight .svg-path {
+    width: 100%;
+  }
 }
 
 .spotlight .svg-path svg {
@@ -175,10 +190,6 @@ p {
   }
   .spotlight .card {
     width: 100%;
-  }
-  .spotlight .svg-path {
-    top: 15svh;
-    width: 275%;
   }
 }
 /*# sourceMappingURL=style.css.map */

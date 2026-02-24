@@ -147,12 +147,24 @@ p {
 
 .spotlight .svg-path {
     position: absolute;
-    top: 25svh;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 330%;
     height: 100%;
     z-index: -1;
+
+    @include mq('sm') {
+        width: 275%;
+    }
+
+    @include mq('md') {
+        width: 125%;
+    }
+
+    @include mq('lg') {
+        width: 100%;
+    }
 }
 
 .spotlight .svg-path svg {
@@ -197,9 +209,4 @@ p {
     .spotlight .card {
         width: 100%;
     } 
-
-    .spotlight .svg-path {
-        top: 15svh;
-        width: 275%;
-    }
 }
